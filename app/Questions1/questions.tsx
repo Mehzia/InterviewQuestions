@@ -464,7 +464,9 @@ const Questions = () => {
     return lastElement;
   }
   console.log(lastlement([1, 2, 3, 4, 5]));
-
+//30. Create an object and print the property
+let person = { name: "GFG", age: 25 };
+console.log(person.name);
   return (
     <div>
       <h1>Interview Questions</h1>
