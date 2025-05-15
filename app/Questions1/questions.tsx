@@ -1,3 +1,4 @@
+import { f } from "node_modules/react-router/dist/development/lib-CCSAGgcP.mjs";
 import React from "react";
 import { memo } from "react";
 
@@ -472,6 +473,28 @@ function mapArray(arr: number[]) {
   return arr.map((item) => item * 2 );
 }
 console.log(mapArray([1, 2, 3, 4, 5]));
+
+//32. string to an array of words 
+function stringToArray(str: string) {
+  return str.split(" ");
+}
+console.log(stringToArray("hello world this is a test"));
+
+function stringToArray2(str: string) {
+  let arr: string[] = [];
+  let word = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      arr.push(word);
+      word = "";
+    } else {
+      word += str[i];
+    }
+  }
+  arr.push(word);
+  return arr;
+}
+console.log(stringToArray2("hello world this is a test"));
 
   return (
     <div>
