@@ -465,8 +465,13 @@ const Questions = () => {
   }
   console.log(lastlement([1, 2, 3, 4, 5]));
 //30. Create an object and print the property
-let person = { name: "GFG", age: 25 };
+let person = { name: "Joe", age: 25 };
 console.log(person.name);
+//31. map function on an array 
+function mapArray(arr: number[]) {
+  return arr.map((item) => item * 2 );
+}
+console.log(mapArray([1, 2, 3, 4, 5]));
 
   return (
     <div>
