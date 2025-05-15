@@ -1,4 +1,4 @@
-import { f } from "node_modules/react-router/dist/development/lib-CCSAGgcP.mjs";
+
 import React from "react";
 import { memo } from "react";
 
@@ -461,40 +461,73 @@ const Questions = () => {
 
   //29. Find the last element of an array
   function lastlement(arr: number[]) {
-    let lastElement = arr[arr.length-1];
+    let lastElement = arr[arr.length - 1];
     return lastElement;
   }
   console.log(lastlement([1, 2, 3, 4, 5]));
-//30. Create an object and print the property
-let person = { name: "Joe", age: 25 };
-console.log(person.name);
-//31. map function on an array 
-function mapArray(arr: number[]) {
-  return arr.map((item) => item * 2 );
-}
-console.log(mapArray([1, 2, 3, 4, 5]));
+  //30. Create an object and print the property
+  let person = { name: "Joe", age: 25 };
+  console.log(person.name);
+  //31. map function on an array
+  function mapArray(arr: number[]) {
+    return arr.map((item) => item * 2);
+  }
+  console.log(mapArray([1, 2, 3, 4, 5]));
 
-//32. string to an array of words 
-function stringToArray(str: string) {
-  return str.split(" ");
-}
-console.log(stringToArray("hello world this is a test"));
+  //32. string to an array of words
+  function stringToArray(str: string) {
+    return str.split(" ");
+  }
+  console.log(stringToArray("hello world this is a test"));
 
-function stringToArray2(str: string) {
-  let arr: string[] = [];
-  let word = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === " ") {
-      arr.push(word);
-      word = "";
-    } else {
-      word += str[i];
+  //33. remove duplicates from an array
+  function removeDuplicates(arr: number[]) {
+    let uniqueArr: number[] = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (!uniqueArr.includes(arr[i])) {
+        uniqueArr.push(arr[i]);
+      }
+    }
+    return uniqueArr;
+  }
+  console.log(removeDuplicates([1, 2, 3, 4, 5, 1, 2, 3]));
+
+  //34.Remove falsy Values from an array
+  function removeFalsyValues(arr: any[]) {
+    return arr.filter(Boolean);
+  }
+  console.log(removeFalsyValues([1, 0, "", null, undefined, NaN, "hello"]));
+
+  function removeFalsyValues2(arr: any[]) {
+    let newArr: any[] = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i]) {
+        newArr.push(arr[i]);
+      }
+    }
+    return newArr;
+  }
+  console.log(removeFalsyValues2([6, 9, "", null, undefined, NaN, "hello"]));
+
+  // 35.  Program to create a simple class 
+  class PersonClass {
+    name: string;
+    age: number;
+    constructor(name: string, age: number) {
+      this.name = name;
+      this.age = age;
+    }
+    introduce() {
+      console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
     }
   }
-  arr.push(word);
-  return arr;
-}
-console.log(stringToArray2("hello world this is a test"));
+  const person1 = new PersonClass("Mehzia", 26);
+  person1.introduce();
+  
+  //36. Use JSON to parse and stringify data
+  let jsonString = '{"name": "John", "age": 30}';
+  let jsonObject = JSON.parse(jsonString);
+  console.log(jsonObject.name);
 
   return (
     <div>
