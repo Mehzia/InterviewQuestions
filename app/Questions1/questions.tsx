@@ -525,9 +525,35 @@ const Questions = () => {
   person1.introduce();
   
   //36. Use JSON to parse and stringify data
-  let jsonString = '{"name": "John", "age": 30}';
+  let jsonString = `{"name": "John", "age": 30}`;
   let jsonObject = JSON.parse(jsonString);
   console.log(jsonObject.name);
+
+  //37.  Check if Two Strings are Anagrams or not
+  function areAnagrams(str1: string, str2: string) {
+    const sortedStr1 = str1.split("").sort().join("");
+    const sortedStr2 = str2.split("").sort().join("");
+    return sortedStr1 === sortedStr2;
+  }
+  console.log(areAnagrams("listen", "silent"));
+
+  function areAnagrams2(str1: string, str2: string) {
+    if (str1.length !== str2.length) {
+      return false;
+    }
+    let charCount: { [key: string]: number } = {};
+    for (let char of str1) {
+      charCount[char] = (charCount[char] || 0) + 1;
+    }
+    for (let char of str2) {
+      if (!charCount[char]) {
+        return false;
+      }
+      charCount[char]--;
+    }
+    return true;
+  }
+  console.log(areAnagrams2("apple", "papel"));
 
   return (
     <div>
