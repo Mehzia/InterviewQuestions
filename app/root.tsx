@@ -48,10 +48,18 @@ export default function App() {
     const queryClient = new QueryClient();
 
   return (
-      <div>
-        <SideBar />
+    <QueryClientProvider client={queryClient}>
+      <div className="flex flex-row">
+       
+        <div>
+          <SideBar />
+        </div>
+        <div className="ml-70">
         <Outlet />
+
+        </div>
       </div>
+      </QueryClientProvider>
        
   );
 }

@@ -1,0 +1,35 @@
+{
+    "nav": {
+      "title": "Patient Details",
+      "navList": [
+        {
+          "name": "Overview",
+          "link": "/overview"
+        },
+        {
+          "name": "Medical info",
+          "link": "/medical"
+        },
+        {
+            "name": "Transmission Reports",
+            "link": "/transmission"
+          },
+          {
+            "name": "Devices & Schedule",
+            "link": "/devices"
+          },
+          {
+            "name": "Clinic",
+            "link": "/clinic"
+          },
+          {
+            "name": "notes",
+            "link": "/notes"
+          }
+
+      ]
+    },
+    "patientOverView": {
+      
+    }
+  }
