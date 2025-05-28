@@ -14,4 +14,8 @@ type Params = {
   "/": {};
   "/login": {};
   "/query": {};
+  "/xml": {};
+  "/fetch": {};
+  "/axios": {};
+  "/patientDetails": {};
 };
