@@ -1,46 +1,51 @@
-import { Link } from "react-router";
+
+import { NavLink } from "react-router";
 
 function SideBar() {
   return (
     <nav className="fixed h-screen px-4 py-4 border-r-2 border-gray-50 w-60 ">
       <h1 className="font-bold pb-1">Patient Details</h1>
       <div className="flex flex-col  space-y-4">
-        <Link
+        <NavLink
           to="/overview"
-          className="hover:text-white hover:bg-blue-900 p-2 rounded-sm"
+          className={({ isActive }) =>
+            `p-2 rounded-sm  ${
+              isActive ? "bg-blue-800 text-white" : "hover:bg-blue-900 hover:text-white"
+            }`
+          }
         >
           Overview
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/medical"
           className=" hover:text-white hover:bg-blue-900 p-2 rounded-sm"
         >
           Medical info
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/transmission"
           className="hover:text-white  hover:bg-blue-900 p-2 rounded-sm"
         >
           Transmission Reports
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/devices"
           className="hover:text-white hover:bg-blue-900 p-2 rounded-sm"
         >
           Devices & Schedule
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/clinic"
           className="hover:text-white  hover:bg-blue-900 p-2 rounded-sm"
         >
           Clinic
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/notes"
           className="hover:text-white  hover:bg-blue-900 p-2 rounded-sm"
         >
           Notes
-        </Link>
+        </NavLink>
       </div>
       <div className="absolute bottom-4">
         <p>Olivia Rhye</p>
