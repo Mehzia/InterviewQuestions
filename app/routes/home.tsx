@@ -10,5 +10,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Questions />;
+  return 
+    <Questions />;
 }

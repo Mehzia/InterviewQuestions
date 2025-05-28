@@ -7,6 +7,6 @@ export default [
     route("/xml", 'Queries/xml.tsx'),
     route('/fetch', 'Queries/fetch.tsx'),
     route('/axios', 'Queries/axios.tsx'),
-    route('/patientDetails', 'patient/index.tsx'),
-    
+    route('/sidebar', 'patient/SideBar/index.tsx'),
+    route('/overview', 'patient/overview/index.tsx'),
 ] satisfies RouteConfig;

@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import MakeupQuery from "./Queries";
+import SideBar from "./patient/SideBar/index";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -47,8 +48,10 @@ export default function App() {
     const queryClient = new QueryClient();
 
   return (
-    
+      <div>
+        <SideBar />
         <Outlet />
+      </div>
        
   );
 }

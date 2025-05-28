@@ -17,5 +17,6 @@ type Params = {
   "/xml": {};
   "/fetch": {};
   "/axios": {};
-  "/patientDetails": {};
+  "/sidebar": {};
+  "/overview": {};
 };
