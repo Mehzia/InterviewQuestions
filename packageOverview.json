@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "mainTitle": "Overview",
+        "navList": [
+            {
+                "title": "Personal Information",
+                "link": "/personal-info"
+            },
+            {
+                "title": "Contacts",
+                "link": "/contacts"
+            },
+            {
+                "title": "Insurance",
+                "link": "/insurance"
+            }
+        ]
+    }
+}
