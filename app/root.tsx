@@ -12,6 +12,7 @@ import "./app.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import MakeupQuery from "./Queries";
 import SideBar from "./patient/SideBar/index";
+import Overview from "./patient/Overview";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -55,7 +56,8 @@ export default function App() {
           <SideBar />
         </div>
         <div className="ml-70">
-        <Outlet />
+          <Overview/>
+        {/* <Outlet /> */}
 
         </div>
       </div>

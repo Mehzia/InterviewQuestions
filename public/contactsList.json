@@ -1,0 +1,66 @@
+{
+    "contactTitle": "Patient contacts",
+    "contactList": [
+      {
+        "patient": "Alex",
+        "Email": "alex@gmail.com",
+        "Address": "123 Maple Street, Denver, CO",
+        "Phone": "303-555-0182"
+      },
+      {
+        "patient": "Bob",
+        "Email": "bob@gmail.com",
+        "Address": "456 Oak Avenue, Austin, TX",
+        "Phone": "512-555-0147"
+      },
+      {
+        "patient": "Catlyn",
+        "Email": "Ca89@gmail.com",
+        "Address": "789 Pine Road, Portland, OR",
+        "Phone": "503-555-0273"
+      },
+      {
+        "patient": "Dickson",
+        "Email": "6987rt@gmail.com",
+        "Address": "321 Cedar Blvd, Miami, FL",
+        "Phone": "786-555-0345"
+      },
+      {
+        "patient": "Elana",
+        "Email": "elly@gmail.com",
+        "Address": "654 Birch Lane, Seattle, WA",
+        "Phone": "206-555-0199"
+      },
+      {
+        "patient": "Finn",
+        "Email": "Finn56@gmail.com",
+        "Address": "987 Spruce Way, Boston, MA",
+        "Phone": "617-555-0456"
+      },
+      {
+        "patient": "George",
+        "Email": "geo90@gmail.com",
+        "Address": "213 Willow St, Chicago, IL",
+        "Phone": "312-555-0678"
+      },
+      {
+        "patient": "Hannah",
+        "Email": "Handle@gmail.com",
+        "Address": "345 Aspen Ct, San Diego, CA",
+        "Phone": "619-555-0712"
+      },
+      {
+        "patient": "Irene",
+        "Email": "Iry8@gmail.com",
+        "Address": "567 Redwood Dr, Phoenix, AZ",
+        "Phone": "602-555-0934"
+      },
+      {
+        "patient": "Jack",
+        "Email": "jill@gmail.com",
+        "Address": "789 Elm Street, Atlanta, GA",
+        "Phone": "404-555-0881"
+      }
+    ]
+  }
+  
