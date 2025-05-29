@@ -11,7 +11,7 @@ export type Info = {
   parents: [Parent0],
   id: "patient/overview/contacts"
   file: "patient/overview/contacts.tsx"
-  path: "/contacts"
+  path: "/overview/contacts"
   params: {} & { [key: string]: string | undefined }
   module: Module
   loaderData: T.CreateLoaderData<Module>

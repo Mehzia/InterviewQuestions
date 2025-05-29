@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 type ContactsData = {
     patient: string;
-    email: string;
+    Email: string;
+    Address: string;
+    Phone: string;
 };
 
 
@@ -33,23 +35,38 @@ function ContactsList () {
             }
         fetchContacts();
         }, []);
-        
+
         const handleContactClick = (contact: ContactsData) => {
             setInfo(contact);
             console.log("Selected contact:", contact);
         }
-    return (
-        <div>
-        <h2 className="font-bold ">{title}</h2>
-        {contacts.map((person) => {
         return (
-          <div key={person.email}>
-            <button className="bg-gray-400 text-black mt-4 w-2.5" onClick={() => handleContactClick(person)}>{person.patient}</button>
-          </div>
-        
-        );
-      })}
-        </div>
-    );
-}
+            <div className="flex p-4 bg-gray-50 mt-5">
+                <div className="flex flex-col pr-4 border-r border-gray-300">
+              <h2 className="font-bold ">{title}</h2>
+              
+              {contacts.map((person) => (
+                <div key={person.Email}>
+                  <button
+                    className="bg-gray-200 flex rounded-2xl text-black mt-4 px-4 py-2"
+                    onClick={() => handleContactClick(person)}
+                  >
+                    {person.patient}
+                  </button>
+                </div>
+              ))}
+              </div>
+            <div className="flex flex-col pl-4">
+              {info && (
+                <div className="mt-8">
+                  <p><strong>Patient Name:</strong> {info.patient}</p>
+                  <p><strong>Email:</strong> {info.Email}</p>
+                  <p><strong>Address:</strong> {info.Address}</p>
+                  <p><strong>Phone:</strong> {info.Phone}</p>
+                </div>
+              )}
+            </div>
+            </div>
+          );
+        }
 export default ContactsList;

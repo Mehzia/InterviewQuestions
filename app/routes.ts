@@ -9,5 +9,5 @@ export default [
     route('/axios', 'Queries/axios.tsx'),
     route('/sidebar', 'patient/SideBar/index.tsx'),
     route('/overview', 'patient/overview/index.tsx'),
-    route('/contacts', 'patient/overview/contacts.tsx'),
+    route('/overview/contacts', 'patient/overview/contacts.tsx'),
 ] satisfies RouteConfig;
