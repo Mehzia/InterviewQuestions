@@ -19,5 +19,8 @@ type Params = {
   "/axios": {};
   "/sidebar": {};
   "/overview": {};
-  "/overview/contacts": {};
+  "/overview/overview/contacts": {};
+  "/overview/overview/:product": {
+    "product": string;
+  };
 };

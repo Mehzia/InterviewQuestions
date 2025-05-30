@@ -4,7 +4,7 @@
         "navList": [
             {
                 "title": "Personal Information",
-                "link": "/personal-info"
+                "link": "/overview/personal-info"
             },
             {
                 "title": "Contacts",
@@ -12,7 +12,7 @@
             },
             {
                 "title": "Insurance",
-                "link": "/insurance"
+                "link": "/overview/insurance"
             }
         ]
     }

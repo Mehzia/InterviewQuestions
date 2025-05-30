@@ -1,12 +1,20 @@
 import { useQuery } from "@tanstack/react-query";
 import { NavLink } from "react-router";
+import { overviewNavSchema } from "./types";
 
-function Nav() {
+function OverviewNav() {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["navtitles"],
     queryFn: async () => {
-      const response = await fetch("/packageOverview.json");
-      return response.json();
+      try {
+        const response = await fetch("/packageOverview.json");
+        const responseJson = await response.json();
+        const parsedResponse = overviewNavSchema.parse(responseJson);
+
+        return parsedResponse;
+      } catch (error) {
+        console.error("Error fetching navigation data:", error);
+      }
     },
   });
   if (isLoading) {
@@ -15,12 +23,13 @@ function Nav() {
   if (isError) {
     return <div>Error loading </div>;
   }
+
   console.log(data);
   return (
     <nav className=" mt-30 w-195">
       <h1 className="font-bold mb-2">{data?.nav.mainTitle}</h1>
       <div className="flex flex-start bg-gray-50 text-gray-500 rounded-xl pt-1 pb-1 pl-0.5">
-        {data?.nav.navList?.map((path) => (
+        {data?.nav.navList.map((path) => (
           <NavLink
             key={path.link}
             to={path.link}
@@ -39,4 +48,4 @@ function Nav() {
     </nav>
   );
 }
-export default Nav;
+export default OverviewNav;

@@ -12,7 +12,7 @@ import "./app.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import MakeupQuery from "./Queries";
 import SideBar from "./patient/SideBar/index";
-import Overview from "./patient/Overview";
+import OverviewNav from "./patient/Overview/OverviewNav";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -46,23 +46,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-    const queryClient = new QueryClient();
+  const queryClient = new QueryClient();
 
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex flex-row">
-       
         <div>
           <SideBar />
         </div>
         <div className="ml-70">
-          <Overview/>
-        {/* <Outlet /> */}
-
+          <Outlet />
         </div>
       </div>
-      </QueryClientProvider>
-       
+    </QueryClientProvider>
   );
 }
 

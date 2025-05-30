@@ -9,9 +9,7 @@ function SideBar() {
       return response.json();
     },
   });
-
-  console.log(data);
-
+  
   return (
     <nav className="fixed h-screen px-4 py-4 border-r-2 border-gray-50 w-60 ">
       <h1 className="font-bold pb-1">{data?.nav?.title}</h1>
