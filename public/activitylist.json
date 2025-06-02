@@ -1,0 +1,65 @@
+{
+    "topic": "Activity ",
+    "list":[{
+        "name": "Alert Transmission",
+        "date": "2023-10-01",
+        "description": "Go To Transmission reports",
+        "time": "10:00 AM"
+    },
+    {
+        "name": "New Report Generated",
+        "date": "2023-10-01",
+        "description": "Go To Reports",
+        "time": "10:00 AM"
+    },
+    {
+        "name": "Pinned Patient Note",
+        "date": "2023-10-01",
+        "description": "Go To Notes",
+        "time": "10:00 AM"
+    },
+    {
+        "name": "Scheduled Transmission",
+        "date": "2023-10-01",
+        "description": "Go To Transmission reports",
+        "time": "10:00 AM"
+    },
+   
+    {
+        "name": "Alert Transmission",
+        "date": "2023-10-01",
+        "description": "Go To Transmission reports",
+        "time": "10:00 AM"
+    },
+    {
+        "name": "Alert Transmission",
+        "date": "2023-10-01",
+        "description": "Go To Transmission reports",
+        "time": "10:00 AM"
+    },
+    {
+        "name": "New Report Generated",
+        "date": "2023-10-01",
+        "description": "Go To Reports",
+        "time": "10:00 AM"
+    },
+    {
+        "name": "Pinned Patient Note",
+        "date": "2023-10-01",
+        "description": "Go To Notes",
+        "time": "10:00 AM"
+    },
+    {
+        "name": "Scheduled Transmission",
+        "date": "2023-10-01",
+        "description": "Go To Transmission reports",
+        "time": "10:00 AM"
+    },
+   
+    {
+        "name": "Alert Transmission",
+        "date": "2023-10-01",
+        "description": "Go To Transmission reports",
+        "time": "10:00 AM"
+    }]
+}

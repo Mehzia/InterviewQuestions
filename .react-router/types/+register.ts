@@ -20,7 +20,5 @@ type Params = {
   "/sidebar": {};
   "/overview": {};
   "/overview/overview/contacts": {};
-  "/overview/overview/:product": {
-    "product": string;
-  };
+  "/overview/overview/personal-info": {};
 };

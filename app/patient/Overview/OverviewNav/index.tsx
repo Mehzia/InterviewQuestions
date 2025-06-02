@@ -26,24 +26,31 @@ function OverviewNav() {
 
   console.log(data);
   return (
-    <nav className=" mt-30 w-195">
-      <h1 className="font-bold mb-2">{data?.nav.mainTitle}</h1>
-      <div className="flex flex-start bg-gray-50 text-gray-500 rounded-xl pt-1 pb-1 pl-0.5">
-        {data?.nav.navList.map((path) => (
-          <NavLink
-            key={path.link}
-            to={path.link}
-            className={({ isActive }) =>
-              `p-2 rounded-xl px-20 ${
-                isActive
-                  ? "bg-white text-black"
-                  : "hover:bg-white hover:text-black"
-              }`
-            }
-          >
-            {path.title}
-          </NavLink>
-        ))}
+    <nav className="w-195">
+      <h1 className="font-bold  text-gray-800 mb-2">{data?.nav.mainTitle}</h1>
+      <div className="flex justify-between gap-2">
+        <div className="w-full">
+          <div className="flex justify-between bg-gray-50 text-gray-500 rounded-xl p-2">
+            {data?.nav.navList.map((path) => (
+              <NavLink
+                key={path.link}
+                to={path.link}
+                className={({ isActive }) =>
+                  `p-2 rounded-xl px-10 gap-4  ${
+                    isActive
+                      ? "bg-white text-black"
+                      : "hover:bg-white hover:text-black"
+                  }`
+                }
+              >
+                {path.title}
+              </NavLink>
+            ))}
+          </div>
+        </div>
+        <div className=" bg-gray-50   p-3 w-20 rounded-xl flex items-center justify-center hover:bg-white">
+          <img src="/public/settings.png" alt="settings" width={25} />
+        </div>
       </div>
     </nav>
   );

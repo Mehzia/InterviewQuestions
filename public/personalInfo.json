@@ -1,38 +1,40 @@
 {
-    "title": "Personal Information",
-    "patient":[{
-        "label": "FULL NAME",
-        "fullName": "Mr.Alena Bator"
+  "title": "Personal Information",
+  "patient": [
+    {
+      "label": "FULL NAME",
+      "name": "Mr.Alena Bator"
     },
     {
-        "label": "PREFERRED NAME",
-        "preferredName": "Alena "
+      "label": "PREFERRED NAME",
+      "name": "Alena "
     },
     {
-        "label": "PREFERRED LANGUAGE",
-        "preferredLanguage": "Mr.Alena Bator"
+      "label": "PREFERRED LANGUAGE",
+      "name": "English"
     },
     {
-        "label": "MOBILE PHONE NUMBER",
-        "phoneNumber": "+1 123-456-7890"
+      "label": "MOBILE PHONE NUMBER",
+      "name": "+1 123-456-7890"
     },
     {
-        "label": "CURRENT ADDRESS",
-        "address": "123 Main St, Springfield, IL 62701"
+      "label": "CURRENT ADDRESS",
+      "name": "123 Main St, Springfield, IL 62701"
     }
-    ],
-    "subTitle": "Emergency Contact",
-    "contact":[{
-        "label":"NAME",
-        "name": "Jane Doe"
+  ],
+  "subTitle": "Emergency Contact",
+  "contact": [
+    {
+      "label": "NAME",
+      "name": "Jane Doe"
     },
     {
-        "label":"RELATIONSHIP",
-        "relationship": "Sister"
+      "label": "RELATIONSHIP",
+      "name": "Sister"
     },
     {
-    "label":"HOME CONTACT NUMBER",
-    "number":"+1 (555) 123-4568"
-    }]}
-
-    
+      "label": "HOME CONTACT NUMBER",
+      "name": "+1 (555) 123-4568"
+    }
+  ]
+}
