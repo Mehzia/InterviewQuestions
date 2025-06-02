@@ -11,6 +11,6 @@ export default [
     route('/overview', 'patient/Overview/index.tsx', [
         route('/overview/contacts', 'patient/Overview/ContactsList/index.tsx'),
          route('/overview/personal-info', 'patient/Overview/PersonalInfo/index.tsx'),
-        route('/overview/:product', 'patient/Overview/PersonalInfo/index.tsx'),
+       // route('/overview/:product', 'patient/Overview/PersonalInfo/index.tsx'),
     ]),
 ] satisfies RouteConfig;

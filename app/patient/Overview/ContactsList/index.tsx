@@ -41,7 +41,7 @@ function ContactsList () {
             console.log("Selected contact:", contact);
         }
         return (
-            <div className="flex p-4 bg-gray-50 mt-5">
+            <div className="flex p-4 bg-gray-50 w-195 mt-5">
                 <div className="flex flex-col pr-4 border-r border-gray-300">
               <h2 className="font-bold ">{title}</h2>
               
